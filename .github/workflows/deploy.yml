@@ -1,0 +1,114 @@
+name: Build and deploy to qsl.net
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (show what would be uploaded/deleted, change nothing)"
+        type: boolean
+        default: true
+      full_upload:
+        description: "Re-upload every file, even unchanged ones"
+        type: boolean
+        default: false
+
+# Never let two deploys run against the server at the same time.
+concurrency:
+  group: qsl-net-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    # A normal run takes about a minute; never let a stuck run linger.
+    timeout-minutes: 15
+    # Credentials live in the "deploy" environment, so the job must opt into it.
+    environment:
+      name: deploy
+      url: https://www.qsl.net/w3apl/
+    env:
+      JEKYLL_ENV: production
+      FTP_HOST: ftp.qsl.net
+      # The FTP login lands directly in the site's web root.
+      REMOTE_DIR: "."
+
+    steps:
+      - name: Check out repository (full history, for file timestamps)
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Install lftp
+        timeout-minutes: 5
+        # Try the runner's existing package lists first (fast, no network
+        # index refresh). Only refresh the lists if that fails. Network and
+        # lock timeouts keep a stalled mirror from hanging the job.
+        run: |
+          APT_OPTS="-o Acquire::Retries=3 -o Acquire::http::Timeout=20 -o DPkg::Lock::Timeout=60"
+          sudo apt-get install -y -qq --no-install-recommends $APT_OPTS lftp || {
+            echo "Retrying after refreshing package lists"
+            sudo apt-get update -qq $APT_OPTS
+            sudo apt-get install -y -qq --no-install-recommends $APT_OPTS lftp
+          }
+
+      - name: Restore file timestamps from git history
+        # A fresh checkout stamps every file with "now". This sets each file
+        # back to the time of the commit that last changed it, so unchanged
+        # images and other static files keep old timestamps and are skipped.
+        run: |
+          count=0
+          while IFS= read -r -d '' f; do
+            ts=$(git log -1 --format=%ct -- "$f")
+            if [ -n "$ts" ]; then
+              touch -d "@$ts" "$f"
+              count=$((count + 1))
+            fi
+          done < <(git ls-files -z)
+          echo "Restored timestamps on $count files"
+          test "$count" -gt 0 || { echo "::error::No timestamps restored"; exit 1; }
+
+      - name: Set up Ruby (version from .ruby-version, cached gems)
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Build site
+        run: make build
+
+      - name: Sanity check build output
+        # Guard against syncing an empty or broken build, which with
+        # --delete would wipe the live site.
+        run: |
+          test -f _site/index.html || { echo "::error::_site/index.html missing, refusing to deploy"; exit 1; }
+          echo "Files to deploy: $(find _site -type f | wc -l)"
+
+      - name: Sync _site to qsl.net
+        env:
+          FTP_USER: ${{ vars.QSL_FTP_USER }}
+          LFTP_PASSWORD: ${{ secrets.QSL_FTP_PASSWORD }}
+          DRY_RUN: ${{ inputs.dry_run && '--dry-run' || '' }}
+          # Upload only files newer than the server's copy, unless a full
+          # upload was requested. Deletions happen either way.
+          ONLY_NEWER: ${{ !inputs.full_upload && '--only-newer' || '' }}
+        run: |
+          test -n "$FTP_USER" || { echo "::error::QSL_FTP_USER variable is not set"; exit 1; }
+          test -n "$LFTP_PASSWORD" || { echo "::error::QSL_FTP_PASSWORD secret is not set"; exit 1; }
+          lftp <<EOF
+          set cmd:fail-exit yes
+          set ftp:ssl-allow no
+          set ftp:passive-mode on
+          set net:timeout 30
+          set net:max-retries 3
+          set net:reconnect-interval-base 5
+          open --env-password -u "$FTP_USER" "$FTP_HOST"
+          cd "$REMOTE_DIR"
+          mirror --reverse --delete --verbose --parallel=4 $ONLY_NEWER $DRY_RUN \
+            --exclude '^ftp/' \
+            _site/ .
+          bye
+          EOF
