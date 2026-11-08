@@ -24,7 +24,7 @@ _The 34 Monthly net since we restarted in February 2024_
 - BOYNTON BEACH, Fla., November 1, 2026 - QSL Shack (qslshack.com), a social platform built exclusively for the amateur radio community, today opened to the public following a beta period that began in August. The service is free, requires no credit card, and welcomes licensed operators and those still studying for their license. <https://daily.hamweekly.com/2026/10/qsl-shack-launches-social-network-for-ham-radio-operators/>
 - Hack-A-Day website has an interesting story on how Amateur Radio Operators are depicted in Movies and Television. “amateur radio as a source of comedy isn’t the only genre at play. Radio amateurs are often depicted as heroic rescuers or communicators.” I guess it is up to all of us to make the rest of the world see which one we prefer. <https://hackaday.com/2026/11/03/the-depiction-of-amateur-radio-in-the-movies-and-tv/>
 
-## W3APL Last Month’S Events
+## W3APL Last Month’s Events
 
 The club received a donation of some great reading material. A heartfelt THANK YOU for your generosity to the club.
 
@@ -63,34 +63,36 @@ There appear to be no State QSO parties until February 2027. Odd…
 
 We’re just going to cover the contests for the next few days, as there are a LOT of them for the month.
 
-| Contest                                 | Date/Time                                  |
-|-----------------------------------------|--------------------------------------------|
-| VHF-UHF FT8 Activity Contest-NA         | 0000-0500 UTC,  November 5                 |
-| Walk for the Bacon QRP Contest          | 0000-0100 UTC,  November 5                 |
-| _-and-_                                 | 0200-0300 UTC,  November 6                 |
-| CWops Test (CWT)                        | 0300-0400 UTC,  November 5                 |
-| CWops Test (CWT)                        | 0700-0800 UTC,  November 5                 |
-| NRAU 10m Activity Contest               | By Mode                                    |
-| - CW                                    | 1800-1900 UTC,  November 5                 |
-| - SSB                                   | 1900-2000 UTC,  November 5                 |
-| - FM                                    | 2000-2100 UTC,  November 5                 |
-| - Dig                                   | 2100-2200 UTC,  November 5                 |
-| SKCC Sprint Europe                      | 2000-2200 UTC,  November 5                 |
-| NCCC FT4 Sprint                         | 0100-0130 UTC,  November 6                 |
-| Weekly RTTY Test                        | 0145-0215 UTC,  November 6                 |
-| QRP Fox Hunt                            | 0200-0330 UTC,  November 6                 |
-| NCCC Sprint                             | 0230-0300 UTC,  November 6                 |
-| K1USN Slow Speed Test                   | 2000-2100 UTC,  November 6                 |
-| YBDXPI FT8 Contest                      | 0000 UTC November 7 to 2359 UTC November 8 |
-| IPARC Contest, CW                       | 0600-1800 UTC,  November 7                 |
-| ARRL Sweepstakes Contest, CW            | 2100 UTC November 7 to 0300 UTC November 9 |
-| IPARC Contest, SSB                      | 0600-1800 UTC,  November 8                 |
-| FIRAC HF Contest                        | 0700 UTC to 1700 UTC,  November 8          |
-| K1USN Slow Speed Test                   | 0000-0100 UTC,  November 9                 |
-| 4 States QRP Group Second Sunday Sprint | 0100-0300 UTC,  November 9                 |
-| ICWC Medium Speed Test                  | 1300-1400 UTC,  November 9                 |
-| OK1WC Memorial (MWC)                    | 1630-1729 UTC,  November 9                 |
-| ICWC Medium Speed Test                  | 1900-2000 UTC,  November 9                 |
+| Contest                                 | Date/Time                  |
+|-----------------------------------------|----------------------------|
+| VHF-UHF FT8 Activity Contest-NA         | 0000-0500 UTC,  November 5 |
+| Walk for the Bacon QRP Contest          | 0000-0100 UTC,  November 5 |
+| _-and-_                                 | 0200-0300 UTC,  November 6 |
+| CWops Test (CWT)                        | 0300-0400 UTC,  November 5 |
+| CWops Test (CWT)                        | 0700-0800 UTC,  November 5 |
+| NRAU 10m Activity Contest               | By Mode                    |
+| - CW                                    | 1800-1900 UTC,  November 5 |
+| - SSB                                   | 1900-2000 UTC,  November 5 |
+| - FM                                    | 2000-2100 UTC,  November 5 |
+| - Dig                                   | 2100-2200 UTC,  November 5 |
+| SKCC Sprint Europe                      | 2000-2200 UTC,  November 5 |
+| NCCC FT4 Sprint                         | 0100-0130 UTC,  November 6 |
+| Weekly RTTY Test                        | 0145-0215 UTC,  November 6 |
+| QRP Fox Hunt                            | 0200-0330 UTC,  November 6 |
+| NCCC Sprint                             | 0230-0300 UTC,  November 6 |
+| K1USN Slow Speed Test                   | 2000-2100 UTC,  November 6 |
+| YBDXPI FT8 Contest                      | 0000 UTC November 7        |
+| - to                                    | 2359 UTC November 8        |
+| IPARC Contest, CW                       | 0600-1800 UTC,  November 7 |
+| ARRL Sweepstakes Contest, CW            | 2100 UTC November 7        |
+| - to                                    | 0300 UTC November 9        |
+| IPARC Contest, SSB                      | 0600-1800 UTC,  November 8 |
+| FIRAC HF Contest                        | 0700-1700 UTC,  November 8 |
+| K1USN Slow Speed Test                   | 0000-0100 UTC,  November 9 |
+| 4 States QRP Group Second Sunday Sprint | 0100-0300 UTC,  November 9 |
+| ICWC Medium Speed Test                  | 1300-1400 UTC,  November 9 |
+| OK1WC Memorial (MWC)                    | 1630-1729 UTC,  November 9 |
+| ICWC Medium Speed Test                  | 1900-2000 UTC,  November 9 |
 
 ## Special Events Stations
 
@@ -134,26 +136,32 @@ Another really cool program to assist with getting your license: <https://hamrad
   - Sponsor: Baltimore VE Team
   - Location: Salem Lutheran Church
   - Time: 2:30 PM (Walk-ins allowed)
+  - [Learn More](https://www.arrl.org/exam_sessions/catonsville-md-21228-4517-127)
 - 11/14/2026 | Cumberland MD 21502-8718
   - Sponsor: Mountain Amt Radio Club
   - Location: Emergency Services Headquarters EOC
   - Time: 10:00 AM (Walk-ins allowed)
+  - [Learn More](https://www.arrl.org/exam_sessions/cumberland-md-21502-8718-12)
 - 11/14/2026 | Davidsonville MD 21035
   - Sponsor: Anne Arundel Radio Club W3VPR.org
   - Location: Davidsonville Family Recreation Center
   - Time: 12:15 PM (Walk-ins allowed)
+  - [Learn More](https://www.arrl.org/exam_sessions/davidsonville-md-21035-114)
 - 11/15/2026 | Lexington Park MD 20653-2008
   - Sponsor: Southern MD Volunteer Exam Group
   - Location: Patuxent River Naval Air Museum (PRNAM)
   - Time: 12:15 PM (No Walk-ins / Register or Call ahead)
+  - [Learn More](https://www.arrl.org/exam_sessions/lexington-park-md-20653-2008-33)
 - 11/21/2026 | Laurel MD 20707-4133
   - Sponsor: Laurel ARC (LARC)
   - Location: Women's Club of Laurel Building
   - Time: 9:00 AM (Walk-ins allowed)
+  - [Learn More](https://www.arrl.org/exam_sessions/laurel-md-20707-4133-288)
 - 11/21/2026 | Rising Sun MD 21911
   - Sponsor: Chesapeake Bay Radio Assoc
   - Location: Rising Sun Public Library
   - Time: 10:00 AM (Walk-ins allowed)
+  - [Learn More](https://www.arrl.org/exam_sessions/rising-sun-md-21911-32)
 
 ## Regularly Occurring W3APL Events
 
