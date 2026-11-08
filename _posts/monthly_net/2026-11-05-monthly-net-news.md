@@ -132,32 +132,32 @@ So many Special Events stations through the month, but I will highlight the upco
 Free practice exams can be found at <https://arrlexamreview.appspot.com/>
 Another really cool program to assist with getting your license: <https://hamradioprep.com/>
 
-- 11/14/2026 | Catonsville MD 21228-4517
+- 11/14/2026 - Catonsville MD 21228-4517
   - Sponsor: Baltimore VE Team
   - Location: Salem Lutheran Church
   - Time: 2:30 PM (Walk-ins allowed)
   - [Learn More](https://www.arrl.org/exam_sessions/catonsville-md-21228-4517-127)
-- 11/14/2026 | Cumberland MD 21502-8718
+- 11/14/2026 - Cumberland MD 21502-8718
   - Sponsor: Mountain Amt Radio Club
   - Location: Emergency Services Headquarters EOC
   - Time: 10:00 AM (Walk-ins allowed)
   - [Learn More](https://www.arrl.org/exam_sessions/cumberland-md-21502-8718-12)
-- 11/14/2026 | Davidsonville MD 21035
+- 11/14/2026 - Davidsonville MD 21035
   - Sponsor: Anne Arundel Radio Club W3VPR.org
   - Location: Davidsonville Family Recreation Center
   - Time: 12:15 PM (Walk-ins allowed)
   - [Learn More](https://www.arrl.org/exam_sessions/davidsonville-md-21035-114)
-- 11/15/2026 | Lexington Park MD 20653-2008
+- 11/15/2026 - Lexington Park MD 20653-2008
   - Sponsor: Southern MD Volunteer Exam Group
   - Location: Patuxent River Naval Air Museum (PRNAM)
   - Time: 12:15 PM (No Walk-ins / Register or Call ahead)
   - [Learn More](https://www.arrl.org/exam_sessions/lexington-park-md-20653-2008-33)
-- 11/21/2026 | Laurel MD 20707-4133
+- 11/21/2026 - Laurel MD 20707-4133
   - Sponsor: Laurel ARC (LARC)
   - Location: Women's Club of Laurel Building
   - Time: 9:00 AM (Walk-ins allowed)
   - [Learn More](https://www.arrl.org/exam_sessions/laurel-md-20707-4133-288)
-- 11/21/2026 | Rising Sun MD 21911
+- 11/21/2026 - Rising Sun MD 21911
   - Sponsor: Chesapeake Bay Radio Assoc
   - Location: Rising Sun Public Library
   - Time: 10:00 AM (Walk-ins allowed)
